@@ -1,0 +1,8 @@
+/* grid.wxss */
+.row {
+
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-right: 8rpx;
+}

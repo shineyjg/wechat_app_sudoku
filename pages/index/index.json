@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "grid": "/components/grid/grid",
+    "operator": "/components/operator/operator",
+    "loader": "/components/loader/loader"
+  }
+}

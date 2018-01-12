@@ -1,0 +1,15 @@
+<!--operator.wxml-->
+<view>
+  <button class="operator-btn" data-id="1" bind:tap="tap">1</button>
+  <button class="operator-btn" data-id="2" bind:tap="tap">2</button>
+  <button class="operator-btn" data-id="3" bind:tap="tap">3</button>
+  <button class="operator-btn" data-id="4" bind:tap="tap">4</button>
+  <button class="operator-btn" data-id="5" bind:tap="tap">5</button>
+</view>
+<view style="margin-top: 5rpx;">
+  <button class="operator-btn" data-id="6" bind:tap="tap">6</button>
+  <button class="operator-btn" data-id="7" bind:tap="tap">7</button>
+  <button class="operator-btn" data-id="8" bind:tap="tap">8</button>
+  <button class="operator-btn" data-id="9" bind:tap="tap">9</button>
+  <button class="operator-btn" data-id="X" bind:tap="tap">X</button>
+</view>

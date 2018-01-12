@@ -1,0 +1,72 @@
+/**index.wxss**/
+#gameinfo-container {
+  width: 100%;
+  margin-bottom: 8rpx;
+}
+.gameinfo {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+#board {
+  width: 100%;
+  text-align: center;
+}
+
+.gridRow {
+  margin-bottom: 8rpx;
+}
+
+.gridCol {
+  display: inline-block;
+}
+
+#levels {
+  display: inline-block;
+  line-height: 2;
+}
+
+.level {
+  font-size: 0.4rem;
+}
+
+operator {
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+}
+
+#new-game-group {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+#new-game {
+  margin-left: 5px;
+  display: inline-block;
+  /* vertical-align: middle; */
+  height: 75rpx;
+  font-size: 0.5rem;
+  line-height: 75rpx;
+}

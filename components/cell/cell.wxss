@@ -1,0 +1,31 @@
+/* cell.wxss */
+
+.cell {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  width: 75rpx;
+  height: 75rpx;
+  display: inline-block;
+  background-color: #e8e8e8;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.digit {
+  color: #09a207;
+}
+
+
+.error {
+  color: red;
+}
+
+.zero {
+  color: #e8e8e8;
+}
+
+.current {
+  border: 1px solid #09a207;
+}

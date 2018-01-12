@@ -1,0 +1,5 @@
+<!--cell.wxml-->
+<label class="cell {{data.origin===0?'digit':''}} {{check && (data.digit!==data.answer)?'error':''}} {{data.digit===0?'zero':''}} {{(current.gridIndex.r===data.index.gridIndex.r && current.gridIndex.c===data.index.gridIndex.c && current.cellIndex.r===data.index.cellIndex.r && current.cellIndex.c===data.index.cellIndex.c)?'current':''}}"  space="nbsp" decode="true" bindtap='selectCurrent'>{{data.digit}}</label>
+
+<!--cell.wxml-->
+<!-- <text class="cell" style="{{data.origin>0?' color: black;': (data.digit===data.answer?'color: red':'color: blue;')}}{{(current.gridIndex.r===data.index.gridIndex.r && current.gridIndex.c===data.index.gridIndex.c && current.cellIndex.r===data.index.cellIndex.r && current.cellIndex.c===data.index.cellIndex.c)?'border : 1px solid blue;': 'border : 1px solid white;'}}" space="nbsp" decode="true" bindtap='selectCurrent'>{{data.digit===0?'&nbsp;':data.digit}}</text> -->

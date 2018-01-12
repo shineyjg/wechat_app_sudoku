@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="gameinfo-container">
+    <span class="gameinfo">{{currentLevel}}</span>
+    <span class="gameinfo">{{time}}</span>
+    <span class="gameinfo" wx:if="{{isSolved}}">成功</span>
+  </view>
+
+  <view id="board">
+    <view class="gridRow" wx:for="{{board}}" wx:key="index" wx:for-item="ri">
+      <grid class="gridCol" wx:for="{{ri}}" wx:key="index1" wx:for-item="item" data="{{item}}" current="{{current}}" check="{{check}}" bind:selectCurrent="onSelectCurrent" />
+    </view>
+  </view>
+  <operator bind:setCellDigit="onSetCellDigit" />
+
+<checkbox-group bindchange="onCheckChanged">
+  <label class="checkbox">
+    检查错误 <checkbox value="check" checked="{{check}}"/>
+  </label>
+</checkbox-group>
+
+  <view id="new-game-group">
+    <radio-group id="levels" class="radio-group" bindchange="onLevelChanged">
+      <label class="radio level" wx:for="{{levels}}" wx:key="value">
+        <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+      </label>
+    </radio-group>
+    <button id='new-game' bindtap='onNewGame' disabled="{{isLoading}}">
+      <loader wx:if="{{isLoading}}"/>新游戏</button>
+  </view>
+</view>

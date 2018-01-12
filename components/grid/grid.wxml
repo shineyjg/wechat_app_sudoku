@@ -1,0 +1,4 @@
+<!--grid.wxml-->
+<view class="row" wx:for="{{data}}" wx:key="index" wx:for-item="ri">
+    <cell wx:for="{{ri}}" wx:key="index1" wx:for-item="item" data="{{item}}" current="{{current}}" check="{{check}}"/>
+</view>
